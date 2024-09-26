@@ -1,0 +1,232 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 9px 15px -3px rgb(241, 8, 8);
+  height: 100vh;
+}
+.main-container{
+  max-width: 350px;
+   
+  background: hsl(0, 0%, 50%);
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden; 
+
+}
+
+button{
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  font-size: 2rem;  
+  transition: 0.8s;
+  cursor: pointer;
+}
+.button-Items::after{
+  content: " ";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.button-Items::before{
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000, #ff7300, #fffb00, #48ff00
+    #00ffd5, #002bff, #ff00c8, #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 1;
+  } 
+@keyframes glowing{
+  0% {background-position: 0 0;}
+  50% { background-position: 400% 0;}
+  100% { background-position: 400% 0;}
+}
+.button-Items:hover::before{
+  opacity: 1;
+
+}
+.button-Items{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 5px 0px;
+
+}
+.equal{
+  grid-column: 3;
+  grid-column-end: 5;
+  width: 100%;
+  background-color: hsl(120, 94%, 34%);
+}
+.input-box{
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  font-size: 2.3rem;
+  padding-bottom: 5px;
+  border-radius: 15px;
+
+
+}
+.divid{
+ background-color: orangered;
+}
+.Multi{
+  background-color: orangered;
+}
+.sub{
+  background-color: orangered;
+}
+.Add{
+  background-color: orangered;
+}
+.Mud{
+  background-color: orangered;
+}
+.divid:hover{
+  background-color: yellow;
+  color: black;
+  letter-spacing: 0.50em;
+}
+
+.Multi:hover{
+ 
+  background-color: yellow;
+  color: black;
+  letter-spacing: 0.50em;
+}
+.sub:hover{
+ 
+  background-color: yellow;
+  color: black;
+  letter-spacing: 0.50em;
+}
+.Add:hover{
+ 
+  background-color: yellow;
+  color: black;
+  letter-spacing: 0.50em;
+}
+.Mud:hover{
+ 
+  background-color: yellow;
+  color: black;
+  letter-spacing: 0.50em;
+}
+.ac:hover{
+ 
+  background-color: black;
+  color: white;
+  letter-spacing: 0.50em;
+}
+.de:hover{
+ 
+  background-color: black;
+  color: white;
+  letter-spacing: 0.50em;
+}
+.equal:hover{
+  background-color: white;
+  letter-spacing: 0.50em;
+}
+.one:hover{
+ 
+  background-color: black;
+  color: white;
+  letter-spacing: 0.50em;
+}
+.two:hover{
+ 
+  background-color: black;
+  color: white;
+  letter-spacing: 0.50em;
+}
+.three:hover{
+ 
+  background-color: black;
+  color: white;
+  letter-spacing: 0.50em;
+}
+.four:hover{
+ 
+  background-color: black;
+  color: white;
+  letter-spacing: 0.50em;
+}
+.five:hover{
+ 
+  background-color: black;
+  color: white;
+  letter-spacing: 0.50em;
+
+}
+.six:hover{
+ 
+  background-color: black;
+  color: white;
+  letter-spacing: 0.50em;
+
+}
+.seven:hover{
+ 
+  background-color: black;
+  color: white;
+  letter-spacing: 0.50em;
+
+}
+.eight:hover{
+ 
+  background-color: black;
+  color: white;
+  letter-spacing: 0.50em;
+
+}
+.nine:hover{
+ 
+  background-color: black;
+  color: white;
+  letter-spacing: 0.50em;
+
+}
+.zero:hover{
+ 
+  background-color: black;
+  color: white;
+  letter-spacing: 0.50em;
+
+}
+.dot:hover{
+ 
+  background-color: black;
+  color: white;
+  letter-spacing: 0.50em;
+
+}
